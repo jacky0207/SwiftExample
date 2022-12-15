@@ -1,0 +1,11 @@
+line_length: 
+   ignores_function_declarations: true
+   ignores_comments: true
+disabled_rules:
+   - force_cast
+   - force_try
+   - trailing_comma
+   - colon
+   - opening_brace
+excluded:
+   - "**/*.pb.swift"

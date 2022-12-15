@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message TestUser {
+    int64 id = 1;
+    int32 userType = 2;
+    string username = 3;
+    int32 gender = 4;
+}
+
+enum TestUserType {
+    GUEST = 0;
+    PERSONAL = 1;
+    COMPANY = 2;
+}
+
+message TestUserSummary {
+    repeated TestUser users = 1;
+}
