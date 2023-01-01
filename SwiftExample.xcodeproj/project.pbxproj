@@ -83,7 +83,7 @@
 				"$(INPUT_FILE_DIR)/$(INPUT_FILE_BASE).pb.swift",
 			);
 			runOncePerArchitecture = 0;
-			script = "protoc --proto_path=$INPUT_FILE_DIR --swift_out=$INPUT_FILE_DIR $INPUT_FILE_PATH\n";
+			script = "export PATH=\"/usr/local/bin:$PATH\"\nprotoc --proto_path=$INPUT_FILE_DIR --swift_out=$INPUT_FILE_DIR $INPUT_FILE_PATH\n";
 		};
 /* End PBXBuildRule section */
 
